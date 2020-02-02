@@ -1,4 +1,4 @@
-#dict数据结构的实现
+# dict数据结构的实现
     //这个结构代表一个节点
     typedef struct dictEntry {
         void *key;
@@ -28,7 +28,7 @@
         unsigned long iterators;    //当前有多少迭代器正在运行
     } dict;
 
-#dict的扩充操作
+# dict的扩充操作
     //redis在dict添加元素时检查是否需要扩容，如下代码所示
     dictEntry *dictAddRaw(dict *d, void *key, dictEntry **existing)
     {
